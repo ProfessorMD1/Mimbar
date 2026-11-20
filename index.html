@@ -269,38 +269,43 @@ function askImam(){
 }
 (async function(){try{await callAI('Say OK only.');setStatus('online');}catch(e){setStatus('offline');}})();
 </script>
-  <script>
-// AUTO COPY BUTTON - works no matter what your answer box is called
+<script>
+// COPY BUTTON - v2 - finds answer by itself, no name needed
 function cleanForCopy(text){
-  return text
-    .replace(/\*\*\*(.*?)\*\*\*/g, '$1')
-    .replace(/\*\*(.*?)\*\*/g, '$1')
-    .replace(/###\s*/g, '')
-    .replace(/##\s*/g, '')
-    .replace(/^#\s*/gm, '')
-    .replace(/\*(.*?)\*/g, '$1')
-    .replace(/`{1,3}/g, '')
-    .trim();
+  return text.replace(/\*\*\*(.*?)\*\*\*/g,'$1').replace(/\*\*(.*?)\*\*/g,'$1').replace(/###\s*/g,'').replace(/##\s*/g,'').replace(/^#\s*/gm,'').replace(/\*(.*?)\*/g,'$1').replace(/`{1,3}/g,'').trim();
 }
-function addCopyButton(){
-  // Find the answer box - try common names
-  const box = document.getElementById('answer') || document.getElementById('response') || document.getElementById('result') || document.querySelector('[id*="answer"]');
-  if(!box || !box.innerText.trim()) return;
-  if(document.getElementById('copyBtn')) return;
-  const btn = document.createElement('button');
-  btn.id = 'copyBtn';
-  btn.textContent = '📋 Copy Answer';
-  btn.style.cssText = 'margin-top:12px;padding:10px 16px;background:#1a7a2e;color:#fff;border:none;border-radius:8px;font-size:16px;cursor:pointer;width:100%';
-  btn.onclick = () => {
-    navigator.clipboard.writeText(cleanForCopy(box.innerText)).then(()=>{
-      btn.textContent = '✅ Copied!';
-      setTimeout(()=> btn.textContent = '📋 Copy Answer', 2000);
-    });
-  };
-  box.after(btn);
+function findAnswerBox(){
+  let best = null, bestLen = 0;
+  document.querySelectorAll('div, section, article, p').forEach(el => {
+    let t = el.innerText || '';
+    // Answer is long, and is the white card - not the whole page
+    if(t.length > 200 && t.length < 8000 && t.length > bestLen){
+      // Skip if it contains MENU / Book Imam / WhatsApp buttons text
+      if(t.includes('MINBAR') && t.includes('MENU')) return;
+      best = el; bestLen = t.length;
+    }
+  });
+  return best;
 }
-// Check every second for a new answer
-setInterval(addCopyButton, 1000);
-  </script>
+let copyBtn = document.createElement('button');
+copyBtn.id = 'copyBtn';
+copyBtn.textContent = '📋 Copy Answer';
+copyBtn.style.cssText = 'display:none;position:fixed;bottom:90px;left:50%;transform:translateX(-50%);z-index:9999;padding:14px 22px;background:#1a7a2e;color:#fff;border:none;border-radius:30px;font-size:16px;font-weight:bold;box-shadow:0 4px 12px rgba(0,0,0,0.3);cursor:pointer';
+document.body.appendChild(copyBtn);
+copyBtn.onclick = () => {
+  let box = findAnswerBox();
+  let txt = box ? box.innerText : document.body.innerText;
+  navigator.clipboard.writeText(cleanForCopy(txt)).then(()=>{
+    copyBtn.textContent = '✅ Copied!';
+    setTimeout(()=> copyBtn.textContent = '📋 Copy Answer', 2000);
+  });
+};
+setInterval(()=>{
+  let box = findAnswerBox();
+  if(box && box.innerText.trim().length > 100){
+    copyBtn.style.display = 'block';
+  }
+}, 1000);
+</script>
 </body>
   </html>
