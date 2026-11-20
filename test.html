@@ -1,0 +1,18 @@
+<!doctype html>
+<html><body style="font-family:sans-serif;padding:20px">
+<h2>API Test</h2>
+<button onclick="test()" style="padding:15px;font-size:18px">Tap to Test API</button>
+<pre id="out" style="white-space:pre-wrap;margin-top:20px;background:#eee;padding:15px"></pre>
+<script>
+async function test(){
+  document.getElementById('out').textContent = 'Testing...';
+  try{
+    const r = await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({prompt:'Salam'})});
+    const t = await r.text();
+    document.getElementById('out').textContent = 'STATUS: '+r.status+'\n\n'+t;
+  }catch(e){
+    document.getElementById('out').textContent = 'FETCH FAILED: '+e;
+  }
+}
+</script>
+</body></html>
