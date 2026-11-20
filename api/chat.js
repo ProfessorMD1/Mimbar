@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).json({ error: 'Use POST' });
-  const prompt = req.body?.prompt || '';
+  const prompt = req.body?.prompt || req.body?.question || req.body?.message || '';
   if (!prompt) return res.status(400).json({ error: 'No prompt' });
   try {
     const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.GEMINI_API_KEY}`, {
