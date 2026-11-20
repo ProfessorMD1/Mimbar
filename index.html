@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MINBAR-AI HUB | Federal University Lokoja - TETFund NRF 2026</title>
+<meta name="description" content="MINBAR-AI HUB: Sect-sensitive, AI-powered digital infrastructure for Islamic sermons. Federal University Lokoja - TETFund NRF 2026.">
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Arial,sans-serif;background:#07150f;color:#fff;line-height:1.6}
+a{color:#ffd700}
+.top{background:#0a2a1e;padding:10px 14px;font-size:12px;text-align:center;border-bottom:1px solid #1e4d36}
+.top b{color:#ffd700}
+header{position:sticky;top:0;background:#07150f;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #1e4d36;z-index:10}
+.logo{font-weight:900;font-size:20px}
+.logo span{color:#2ecc71}
+.menuBtn{background:#2ecc71;border:0;padding:10px 14px;border-radius:10px;font-weight:800;cursor:pointer;color:#000}
+nav{display:none;background:#0a2a1e;padding:10px}
+nav.open{display:block}
+nav a{display:block;padding:11px 8px;border-bottom:1px solid #163a2a;text-decoration:none;color:#fff;font-weight:600}
+nav a:last-child{border-bottom:0}
+.hero{padding:28px 16px;text-align:center;background:linear-gradient(180deg,#0a2a1e,#07150f)}
+.hero h1{font-size:30px;line-height:1.2;margin:8px 0}
+.hero h1 span{color:#2ecc71}
+.pill{display:inline-block;background:#ffd700;color:#000;padding:6px 12px;border-radius:20px;font-weight:800;font-size:12px}
+.btn{display:inline-block;background:#2ecc71;color:#000;padding:14px 20px;border-radius:12px;font-weight:900;text-decoration:none;margin:6px;border:0;cursor:pointer;font-size:15px}
+.btn:disabled{opacity:.6;cursor:wait}
+.btn2{background:#ffd700}
+.btnW{background:#fff}
+.btnWA{background:#25D366;color:#fff}
+section{padding:24px 16px;max-width:900px;margin:auto;scroll-margin-top:70px}
+h2{color:#2ecc71;margin-top:0}
+h3{margin:8px 0}
+.card{background:#0d2a1e;border:1px solid #1e4d36;padding:16px;border-radius:16px;margin:12px 0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.grid div{background:#122f22;padding:14px;border-radius:12px}
+input,select,textarea{width:100%;padding:13px;border-radius:12px;border:0;margin:8px 0;color:#000;font-size:15px;font-family:inherit}
+textarea{min-height:100px;resize:vertical}
+label{font-size:13px;font-weight:700;color:#ffd700}
+.tabs{display:flex;gap:8px}
+.tab{flex:1;padding:13px;border-radius:12px;border:0;font-weight:800;cursor:pointer;background:#1e4d36;color:#fff}
+.tab.active{background:#ffd700;color:#000}
+.badge{display:inline-block;background:#ffd700;color:#000;padding:5px 10px;border-radius:20px;font-size:12px;font-weight:800}
+.status{display:inline-block;padding:6px 12px;border-radius:20px;font-size:12px;font-weight:800;background:#333;color:#fff}
+.status.online{background:#2ecc71;color:#000}
+.status.offline{background:#e74c3c;color:#fff}
+.status.checking{background:#ffd700;color:#000}
+.answer{background:#fff;color:#000;padding:14px;border-radius:12px;margin-top:10px;white-space:pre-wrap;word-break:break-word}
+.answer a{color:#0a5c36}
+table{width:100%;border-collapse:collapse;font-size:14px}
+td,th{border:1px solid #2a4d3a;padding:8px;text-align:left}
+footer{background:#000;padding:24px 16px;text-align:center;font-size:13px;color:#ccc}
+.small{font-size:12px;color:#ccc}
+.paybox{background:#fff;color:#000;padding:12px;border-radius:12px;margin-top:10px;font-size:14px}
+.floatWrap{position:fixed;bottom:14px;right:14px;z-index:99;display:flex;flex-direction:column;gap:8px;align-items:flex-end}
+.floatBtn{display:block;text-decoration:none;font-weight:900;padding:13px 16px;border-radius:50px;font-size:14px;box-shadow:0 4px 14px rgba(0,0,0,.45);text-align:center}
+@media(max-width:600px){.grid{grid-template-columns:1fr}.hero h1{font-size:26px}.tabs{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="top">TETFund <b>NRF 2026 CONCEPT NOTE</b> • Coordinating Institution: <b>Federal University Lokoja</b> • PI: Dept. of Arabic Language • EU 101193489 • Thematic: 9 Languages, 2 Conflict, 1 Citizenship, 4 Education, 17 IT, 26 Entrepreneurship</div>
+<header><div class="logo">🕌 MINBAR<span>-AI</span> HUB</div><button class="menuBtn" onclick="document.getElementById('nav').classList.toggle('open')">☰ MENU</button></header>
+<nav id="nav">
+<a href="#home" onclick="closeMenu()">🏠 Home</a><a href="#try" onclick="closeMenu()">🤖 Try Mimbar AI</a><a href="#library" onclick="closeMenu()">📚 Sermon Library / Library</a><a href="#learn" onclick="closeMenu()">📖 Learn Islam</a><a href="#imams" onclick="closeMenu()">👳 For Imams + Imam Certification</a><a href="#book" onclick="closeMenu()">📅 Book an Imam</a><a href="#askimam" onclick="closeMenu()">❓ Ask Imam - N500</a><a href="#almajiri" onclick="closeMenu()">👦 For Almajiris</a><a href="#citizens" onclick="closeMenu()">👨‍👩‍👧 For Citizens</a><a href="#schools" onclick="closeMenu()">🏫 For Schools &amp; NGOs</a><a href="#children" onclick="closeMenu()">🧒 Children Corner</a><a href="#women" onclick="closeMenu()">🧕 For Women</a><a href="#about" onclick="closeMenu()">ℹ️ About / TETFund Concept</a><a href="#contact" onclick="closeMenu()">📞 Contact</a>
+</nav>
+
+<div class="hero" id="home">
+<div class="pill">FROM RESEARCH TO MARKET • PEACEFUL SERMONS UNITED</div>
+<h1>MINBAR-AI HUB: <span>Sect-Sensitive, AI-Powered</span> Digital Infrastructure for Islamic Sermons</h1>
+<p>Archiving, Moderating, Translating, Monetizing &amp; Amplifying Islamic Sermons Across Social Media for Peacebuilding, Indigenous Language Promotion, Arabic Literacy &amp; Wealth Creation in North Central Nigeria.</p>
+<p><b>Offline Imam, Online Youth:</b> 109M Nigerians online • 36M Facebook • 32M TikTok • 67% extremist recruitment starts online. We equip VERIFIED Imams to transform online spaces and earn.</p>
+<p><b>Led by:</b> Fadilatul Sheikh Abubakar Yusuf • Dept. of Arabic Studies, Faculty of Arts, Federal University Lokoja</p>
+<a class="btn" href="#try">Try Mimbar AI →</a><a class="btn btn2" href="#book">📅 Book an Imam →</a><a class="btn btnW" href="#imams">Imam Certification →</a><br>
+<a class="btn btnWA" href="#askimam">❓ Ask Imam - N500</a><a class="btn btn2" href="#library">Open Library →</a>
+<div class="grid" style="margin-top:16px;text-align:left"><div><b>12,000+</b><br>Jumuah Mosques</div><div><b>124</b><br>Languages in North Central</div><div><b>10,000</b><br>Sermons Target Archived</div><div><b>5,000</b><br>Imams to be Certified</div></div>
+</div>
+
+<section id="try">
+<h2>🤖 Try Mimbar AI — 2 AIs in One</h2>
+<p><span id="aiStatus" class="status checking">● CHECKING AI CONNECTION...</span></p>
+<div class="tabs"><button class="tab active" id="t1" onclick="showTab(1)">🕌 General AI - Ask About Islam</button><button class="tab" id="t2" onclick="showTab(2)">🎤 Khutbah AI - Moderation</button></div>
+<div id="panel1" class="card">
+<p><b>Ask anything about Islam.</b> Powered by Gemini. Sect-sensitive, with Adab — no takfir, no insult. Answers with Quran / Hadith references.</p>
+<textarea id="q" placeholder="Example: What is Zakat? How do I pray? What does Islam say about peace with neighbours?"></textarea>
+<button class="btn" id="btnGeneral" onclick="askGeneral()">Ask General AI</button>
+<div id="ans1" class="answer" style="display:none"></div>
+<p class="small">Need a verified answer from a scholar? <a href="#askimam">Ask Imam - N500 →</a></p>
+</div>
+<div id="panel2" class="card" style="display:none">
+<p><b>🎤 Sermon Moderator:</b> Paste sermon → Choose language → Analyse → Flagged → Peaceful Rewrite → Translation. Approved style by Multi-Sect Council (Izala / Darika / Shia).</p>
+<textarea id="sermon" placeholder="Paste your khutbah / sermon text here... Example: Let us live in peace with our neighbours"></textarea>
+<label for="lang">Translate peaceful version to:</label>
+<select id="lang"><option>Hausa</option><option>Pidgin</option><option>Yoruba</option><option>English</option><option>Arabic</option><option>Nupe</option><option>Ebira</option><option>Igala</option><option>Tiv</option><option>Gbagyi</option></select>
+<button class="btn btn2" id="btnAnalyse" onclick="analyse()">ANALYSE SERMON</button>
+<div id="ans2"></div>
+</div>
+</section>
+
+<section id="book">
+<h2>📅 Book an Imam</h2>
+<div class="card">
+<p><b>Book a Verified Imam</b> for Nikah, Janaza, Aqeeqa, Maulid, Mirath, House Prayer, Community Prayer &amp; more. Fill the form — it will open WhatsApp to <b>Fadilatul Sheikh Abubakar Yusuf</b> automatically. No typing needed.</p>
+<label for="bkName">Your Full Name *</label><input id="bkName" placeholder="e.g. Musa Abdullahi">
+<label for="bkPhone">Your Phone / WhatsApp *</label><input id="bkPhone" placeholder="e.g. 0803 000 0000">
+<label for="bkService">What do you want to book? *</label>
+<select id="bkService"><option>Nikah (Marriage)</option><option>Janaza (Funeral)</option><option>Aqeeqa (Naming)</option><option>Maulid / Waazi</option><option>Prayer for New House</option><option>Prayer for Community / Borehole</option><option>Mirath (Inheritance)</option><option>Monthly Family Counseling - N10k/month</option><option>Invitation of Other Imams</option><option>Other - Explain below</option></select>
+<label for="bkDate">Date Needed</label><input id="bkDate" type="date">
+<label for="bkPlace">Location / Town *</label><input id="bkPlace" placeholder="e.g. Lokoja, Kogi State">
+<label for="bkDetails">More Details</label><textarea id="bkDetails" placeholder="Tell us time, venue, number of people, any special request..."></textarea>
+<button class="btn btnWA" onclick="bookImam()">📅 Send Booking on WhatsApp →</button>
+<button class="btn btn2" onclick="window.open('https://wa.me/2348036356574?text='+encodeURIComponent('Salam, I want to book an Imam. Please send me details.'),'_blank')">💬 Chat First</button>
+<div class="paybox"><b>💳 Payment:</b> Booking is confirmed after payment. Pay via <b>OPay — 0803 635 6574</b> (Fadilatul Sheikh Abubakar Yusuf). Send your receipt on WhatsApp after payment. Marketplace commission 15% applies. Escrow protected.</div>
+<div id="bookMsg" class="small" style="margin-top:8px"></div>
+</div>
+</section>
+
+<section id="askimam">
+<h2>❓ Ask Imam - N500</h2>
+<div class="card">
+<p><b>Ask a verified scholar</b> — Multi-Sect Mufti Panel. Highest respect, no takfir, no insult. For Fiqh, family, marriage, business, worship &amp; more.</p>
+<p><b>Scholar:</b> Fadilatul Sheikh Abubakar Yusuf • Dept. of Arabic Studies, Federal University Lokoja</p>
+<label for="askQ">Your Question *</label><textarea id="askQ" placeholder="Type your question here... e.g. How do I share Mirath for my family?"></textarea>
+<label for="askName">Your Name (Optional)</label><input id="askName" placeholder="Your name">
+<button class="btn btnWA" onclick="askImam()">❓ Send Question on WhatsApp - N500</button>
+<a class="btn btn2" href="mailto:abubakaryusuf990@gmail.com?subject=Ask%20Imam%20-%20N500&body=Salam%2C%20my%20question%20is%3A%20">✉️ Ask by Email</a>
+<div class="paybox"><b>💳 How to Pay N500:</b><br>1. Pay <b>N500</b> to <b>OPay — 0803 635 6574</b><br>2. Send your question + payment receipt on WhatsApp<br>3. You will get a verified answer from the Mufti Panel.<br><br><b>WhatsApp:</b> 0803 635 6574 • <b>Email:</b> abubakaryusuf990@gmail.com</div>
+<div id="askMsg" class="small" style="margin-top:8px"></div>
+</div>
+</section>
+
+<section id="library"><h2>📚 Library — Links to Islamic Libraries of ALL Sects</h2><p>We link all sects with respect — learn, don't fight. Vetted by Multi-Sect Council.</p>
+<div class="card"><h3>For All</h3><p>📖 <a href="https://quran.com" target="_blank" rel="noopener">Quran.com</a> — Quran with translation<br>📚 <a href="https://sunnah.com" target="_blank" rel="noopener">Sunnah.com</a> — Hadith<br>📖 <a href="https://altafsir.com" target="_blank" rel="noopener">AlTafsir.com</a> — Tafsir Jalalain / Ibn Kathir<br>📚 Free Fiqh / Tafsir — vetted archive inside MINBAR-AI</p></div>
+<div class="card"><h3>Sunni / Izala</h3><p>• <a href="https://islamweb.net" target="_blank" rel="noopener">IslamWeb.net</a> • <a href="https://islamqa.info" target="_blank" rel="noopener">IslamQA.info</a> • SunnahOnline • Izala Library &amp; Tafsir</p></div>
+<div class="card"><h3>Darika / Sufi — Tijaniyya / Qadiriyya</h3><p>• Tijaniyya Library • Qadiriyya Texts • Seerah / Mawlid Books • Dhikr &amp; Adab Collections</p></div>
+<div class="card"><h3>Shia</h3><p>• <a href="https://al-islam.org" target="_blank" rel="noopener">Al-Islam.org</a> • Shia Hadith &amp; Tafsir Library</p></div>
+<div class="card"><h3>General</h3><p>• Internet Archive Islamic Books • Open Islamic Library • Federal University Lokoja Library • <a href="https://www.talentoutreach.org" target="_blank" rel="noopener">talentoutreach.org</a> • <a href="https://www.eyesnetwork.org" target="_blank" rel="noopener">eyesnetwork.org</a></p></div>
+</section>
+
+<section id="learn"><h2>📖 Learn Islam</h2><div class="card"><b>Arabic Literacy + Indigenous Languages</b><br>Phase 1: Hausa (80M+), Pidgin (60M), Yoruba (50M+) — 70% translated Year 2<br>Phase 2 Year 3-5: Nupe (3M), Ebira (1M), Igala (1M), Tiv (5M), Gbagyi<br><br>• Learn Salah, Wudu, Zakat, Hajj<br>• Mother-tongue Khutbah — hear togetherness in your own tongue<br>• Courses N3k - N10k • Coaching N2k/hr<br><br><a class="btn" href="#book">Book a Teacher / Imam →</a></div></section>
+
+<section id="imams"><h2>👳 For Imams + Imam Certification</h2>
+<div class="card"><b>Verified Imam E-Badge</b> — Blockchain FULOKOJA + ITO — 80% fee to trainer Imam<br><br><table><tr><th>Level</th><th>Fee</th></tr><tr><td>Basic — IT + Arabic Teacher</td><td>N3,000</td></tr><tr><td>Mid — IT + Arabic Teacher</td><td><b>N5,000</b></td></tr><tr><td>Advanced</td><td>N10,000</td></tr></table><br><a class="btn" href="#try">Apply / Start Certification →</a></div>
+<div class="card"><b>Booking Marketplace — 15% Commission</b><br>Funeral Janaza, Nikah, Naming Aqeeqa, Maulid/Waazi, Prayer for new house, Prayer for community/borehole, Invitation of other Imams, Mirath, Monthly family counseling N10k/month virtual/physical. Escrow protected.<br><br><a class="btn btn2" href="#book">📅 Book an Imam Now →</a><br><br><b>Social Media Amplification &amp; Monetization:</b> Auto-generates 3-min video + subtitles, 60-sec Reel/TikTok, audiogram for WhatsApp, full YouTube + thumbnail + watermark Verified Imam, FULOKOJA. One-click publish to Facebook Page, YouTube, TikTok, WhatsApp Channel, Telegram. Train on YouTube Partner Program, Facebook Stars, TikTok gifts.</div>
+<div class="card"><b>Teleconference + Haramain Link:</b> Monthly closed session — Local Imams + Haramain Imams.</div>
+<div class="card"><b>Peace Score &amp; Imam of Peace:</b> Uploads + community-promoting + peace-promoting + citizenship + discouraging crimes. Top 20 monthly get stipend from NGO Donation Pool + 10% profit.</div>
+</section>
+
+<section id="almajiri"><h2>👦 For Almajiris</h2><div class="card">3.2M Almajiri out-of-school in North Central. We help:<br>• Literacy Basic / Mid / Advanced — E-badge Level 1-3<br>• Hire Imam for coaching/grooming N2k/hr<br>• Arabic + English + Skills<br><b>Target: 2,000 Almajiri literate with e-badges</b><br><br><a class="btn" href="#book">Book a Coach →</a></div></section>
+
+<section id="citizens"><h2>👨‍👩‍👧 For Citizens</h2><div class="card">• Islamic Q&amp;A with moderated Multi-Sect Mufti Panel — Premium N500 — highest respect, no takfir — <a href="#askimam">Ask Imam Now →</a><br>• Monthly Family Counseling N10k/month — <a href="#book">Book Now →</a><br>• Book Imam for Nikah, Janaza, Aqeeqa, Maulid, Mirath, House Prayer — <a href="#book">Book Now →</a><br>• Citizenship Education — good life, discouraging crimes against state / government / citizens</div></section>
+
+<section id="schools"><h2>🏫 For Schools &amp; NGOs</h2><div class="card">• Schools order Arabic teachers — solves teacher gap (75% schools no Arabic teacher)<br>• School Licensing N100k/year + Pro N1k/mo + Halal Ads<br>• NGOs Donate to Incentivize Uploads — Search for Common Ground / UNDP / Kukah Centre — Dashboard<br>• Researchers Pay to Download N5k-20k/download, Annual Pass N50k — no dataset exists<br>• Zakat / Waqf Button • Grants — IsDB, Gates, EU via eyesnetwork.org<br><br><a class="btn" href="#contact">Contact Us →</a></div></section>
+
+<section id="children"><h2>🧒 Children Corner</h2><div class="card">• Quran for Kids • Islamic Stories • Seerah Stories • Arabic Alphabet Games • Good Manners (Adab) • Prayers for Kids<br>Safe, fun, mother-tongue learning. For ages 4-12.</div></section>
+
+<section id="women"><h2>🧕 For Women</h2><div class="card">• Women Scholars &amp; Teachers • Fiqh for Women • Marriage &amp; Family • Motherhood &amp; Parenting • Women Arabic Classes • Safe Q&amp;A with Female Mufti Panel<br>With dignity, respect &amp; Adab.<br><br><a class="btn" href="#askimam">Ask Imam - Women Section →</a></div></section>
+
+<section id="about"><h2>ℹ️ About — TETFund NRF 2026 Concept Note</h2>
+<div class="card"><b>PROBLEM:</b> Imams feel abandoned, earn N5k-20k, 68% no IT (Baseline 2026). Unregulated sermons drive farmer-herder clash. Imams not appreciated, defensive sectarianism. Youth no longer in mosque daily but on TikTok/YouTube. 80% local Imams never uploaded sermon online.</div>
+<div class="card"><b>SOLUTION — MINBAR-AI HUB:</b> A. Voice &amp; Translation B. AI Khutba Generator + Filter C. N5k Micro-Cert + E-badges D. Library E. Teleconference + Haramain Link F. Booking Marketplace G. Ranking + NGO Incentive H. Social Media Amplification &amp; Monetization</div>
+<div class="card"><b>SUSTAINABILITY — 12 LINES:</b> 1. Certs N5k x 10k = N50M 2. Courses N3k-10k 3. Booking 15% 4. Counseling N10k 5. Coaching N2k/hr 6. Q&amp;A N500 7. Researchers N5k-20k 8. NGOs Donate 9. Social Media Monetization 10. Zakat/Waqf 11. Grants 12. School licensing N100k/year</div>
+<div class="card"><b>OUTCOMES:</b> 10k sermons archived, 70% Hausa/Pidgin/Yoruba translated Year 2, 5k Imams certified income +50%, 2k Almajiri literate, 1k families counseled, 60% hate reduction, 2M online peace views Year 2, N5M researcher fees/year, N15M NGO pool/year, 3 startups, 2 patents.</div>
+<div class="card"><b>BUDGET: N48.5M</b> — Dev/AI N16M, Data N8M, Servers N6M, Pilot N9M, Council N4M, Admin N5.5M<br><br><b>REFERENCES:</b> Berkey (2020), DataReportal (2024), ICG (2022), JOLAN (2010), Kane (2021), NERDC (2023), Omachonu (2017), UNDP (2023), UNICEF (2024), USIP (2022, 2023), Volta-Niger (2024).<br><br><b>Partners:</b> Federal University Lokoja • International Talent Outreach — talentoutreach.org • eyesnetwork.org • EU 101193489</div>
+</section>
+
+<section id="contact"><h2>📞 Contact</h2>
+<div class="card"><b>Fadilatul Sheikh Abubakar Yusuf</b><br>Department of Arabic Studies, Faculty of Arts<br>Federal University Lokoja, Kogi State, Nigeria<br><br>📱 WhatsApp: <a href="https://wa.me/2348036356574">0803 635 6574</a><br>✉️ Email: <a href="mailto:abubakaryusuf990@gmail.com">abubakaryusuf990@gmail.com</a><br>💳 OPay: 0803 635 6574<br><br><a class="btn btnWA" href="https://wa.me/2348036356574?text=Salam%2C%20I%20am%20contacting%20MINBAR-AI%20HUB" target="_blank" rel="noopener">💬 WhatsApp Us</a><a class="btn btn2" href="mailto:abubakaryusuf990@gmail.com">✉️ Send Email</a><a class="btn" href="#book">📅 Book an Imam</a></div>
+</section>
+
+<footer>© 2026 MINBAR-AI HUB • Federal University Lokoja • TETFund NRF 2026<br>Fadilatul Sheikh Abubakar Yusuf • Dept. of Arabic Studies, Faculty of Arts<br>WhatsApp 0803 635 6574 • Email abubakaryusuf990@gmail.com • OPay 0803 635 6574<br>Peaceful Sermons United • All Sects With Respect • Learn, Don't Fight<br><a href="#home">Back to Top ↑</a></footer>
+
+<div class="floatWrap">
+<a class="floatBtn" style="background:#ffd700;color:#000" href="#book">📅 Book Imam</a>
+<a class="floatBtn" style="background:#25D366;color:#fff" href="https://wa.me/2348036356574?text=Salam%2C%20I%20want%20to%20ask%20about%20MINBAR-AI%20HUB" target="_blank" rel="noopener">💬 WhatsApp</a>
+</div>
+
+<script>
+var WA_NUMBER='2348036356574';
+function closeMenu(){document.getElementById('nav').classList.remove('open')}
+function showTab(n){
+  document.getElementById('panel1').style.display=n==1?'block':'none';
+  document.getElementById('panel2').style.display=n==2?'block':'none';
+  document.getElementById('t1').classList.toggle('active',n==1);
+  document.getElementById('t2').classList.toggle('active',n==2);
+}
+function setStatus(mode){
+  var s=document.getElementById('aiStatus');
+  if(mode==='online'){s.className='status online';s.textContent='● ONLINE - Gemini Connected';}
+  else if(mode==='offline'){s.className='status offline';s.textContent='● OFFLINE - Using Built-in Answers';}
+  else{s.className='status checking';s.textContent='● CHECKING AI CONNECTION...';}
+}
+function escapeHtml(t){return String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+async function callAI(prompt){
+  var r=await fetch('/api/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({prompt:prompt})});
+  if(!r.ok) throw new Error('API '+r.status);
+  var d=await r.json();
+  var text=d.answer||d.reply||d.text||'';
+  if(!text) throw new Error('Empty answer');
+  return text;
+}
+async function askGeneral(){
+  var q=document.getElementById('q').value.trim();
+  var el=document.getElementById('ans1');
+  var btn=document.getElementById('btnGeneral');
+  if(!q){el.style.display='block';el.textContent='Please type a question first. Example: What is Zakat?';return;}
+  el.style.display='block';el.textContent='Thinking... Asking MINBAR AI...';
+  btn.disabled=true;btn.textContent='Thinking...';
+  try{
+    var prompt='You are MINBAR-AI, a respectful, sect-sensitive Islamic assistant for Nigeria (Federal University Lokoja / TETFund NRF project). Rules: No takfir, no insult to any sect (Izala/Sunni, Darika/Sufi, Shia). Be peaceful, use Adab, give Quran/Hadith references when possible, keep answer clear and short for ordinary Nigerians, in English unless user asked another language. Question: '+q;
+    var ans=await callAI(prompt);
+    el.textContent=ans;setStatus('online');
+  }catch(e){
+    setStatus('offline');
+    el.innerHTML='<b>MINBAR General AI (Offline Mode):</b><br><br>Your question: <i>'+escapeHtml(q)+'</i><br><br>In Islam, peace (Salam), justice, mercy and good neighbourliness are central. Quran 49:13 — <i>We made you into nations and tribes that you may know one another.</i><br><br>AI is temporarily unreachable. Please try again, or ask Imam (N500) for a verified answer.<br><br><a href="https://quran.com" target="_blank" rel="noopener">Quran.com</a> • <a href="https://sunnah.com" target="_blank" rel="noopener">Sunnah.com</a> • <a href="https://altafsir.com" target="_blank" rel="noopener">AlTafsir.com</a>';
+  }
+  btn.disabled=false;btn.textContent='Ask General AI';
+}
+var bad=['kill','attack','hate','destroy','fight them','burn','bomb','enemy kill','ku kashe','kill them','kafir','apostate'];
+var transFallback={'Hausa':'Zaman lafiya ga kowa. Mu zauna lafiya da makwabtanmu.','Pidgin':'Make we live for peace with our neighbours.','Yoruba':'Jẹ ki a gbe ni alaafia pẹlu awọn aladugbo wa.','English':'Let us live in peace with our neighbours.','Arabic':'فلنعش بسلام مع جيراننا.','Nupe':'Emin yizhe a nyi lafiya da ezanmin.','Ebira':'Ava si anuvayi ava ozove.','Igala':'E kanyi alafia nebe ogba wa.','Tiv':'Se ter tar a bem sha ayev se.','Gbagyi':'A she lafiya da gna yi.'};
+function offlineAnalyse(t,lang){
+  var low=t.toLowerCase();
+  var found=bad.filter(function(w){return low.includes(w)});
+  var rewrite=t.replace(/kill them|kill|attack|hate/gi,'love and live in peace with');
+  if(!t) rewrite='Let us live in peace with our neighbours, build our community, and pray for Nigeria.';
+  return '<div class="answer">'+(found.length?'<b>⚠️ FLAGGED:</b> '+escapeHtml(found.join(', '))+'<br>':'<b>✅ No hate flagged — Peaceful sermon</b><br>')+'<br><b>Peaceful Rewrite:</b><br>'+escapeHtml(rewrite)+'<br><br><b>Translation ['+escapeHtml(lang)+']:</b><br>'+escapeHtml(transFallback[lang]||transFallback.English)+'<br><br><b>Peace Score: '+(found.length?'60/100 — Needs moderation':'95/100 — Peaceful')+'</b><br><span class="small">(Offline fallback)</span></div>';
+}
+async function analyse(){
+  var t=document.getElementById('sermon').value.trim();
+  var lang=document.getElementById('lang').value;
+  var el=document.getElementById('ans2');
+  var btn=document.getElementById('btnAnalyse');
+  if(!t){el.innerHTML='<div class="answer">Please paste a sermon first.</div>';return;}
+  el.innerHTML='<div class="answer">Analysing sermon... Checking for hate, rewriting peacefully, translating to '+escapeHtml(lang)+'...</div>';
+  btn.disabled=true;btn.textContent='ANALYSING...';
+  try{
+    var prompt='You are MINBAR-AI Sermon Moderator for Nigeria, approved style by Multi-Sect Council (Izala / Darika / Shia). Task: 1) Flag any hate, takfir, insult, or incitement in this sermon. 2) Give a peaceful rewrite keeping the Islamic message. 3) Translate the peaceful rewrite to '+lang+'. 4) Give a Peace Score 0-100. Sermon: """'+t+'""" Return in clear sections: FLAGGED / PEACEFUL REWRITE / TRANSLATION / PEACE SCORE.';
+    var ans=await callAI(prompt);
+    el.innerHTML='<div class="answer">'+escapeHtml(ans)+'</div>';
+    setStatus('online');
+  }catch(e){
+    setStatus('offline');
+    el.innerHTML=offlineAnalyse(t,lang);
+  }
+  btn.disabled=false;btn.textContent='ANALYSE SERMON';
+}
+function bookImam(){
+  var name=document.getElementById('bkName').value.trim();
+  var phone=document.getElementById('bkPhone').value.trim();
+  var service=document.getElementById('bkService').value;
+  var date=document.getElementById('bkDate').value;
+  var place=document.getElementById('bkPlace').value.trim();
+  var details=document.getElementById('bkDetails').value.trim();
+  var msg=document.getElementById('bookMsg');
+  if(!name||!phone||!place){msg.textContent='Please fill Name, Phone and Location.';msg.style.color='#ffd700';return;}
+  var text='Salam, I want to BOOK AN IMAM via MINBAR-AI HUB\n\nName: '+name+'\nPhone: '+phone+'\nService: '+service+'\nDate: '+(date||'Not set')+'\nLocation: '+place+'\nDetails: '+(details||'-')+'\n\nPlease confirm availability and payment (OPay 0803 635 6574).';
+  window.open('https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent(text),'_blank');
+  msg.textContent='Opening WhatsApp... Your booking has been prepared. Please press Send in WhatsApp.';
+  msg.style.color='#2ecc71';
+}
+function askImam(){
+  var q=document.getElementById('askQ').value.trim();
+  var name=document.getElementById('askName').value.trim();
+  var msg=document.getElementById('askMsg');
+  if(!q){msg.textContent='Please type your question first.';msg.style.color='#ffd700';return;}
+  var text='Salam, ASK IMAM - N500 via MINBAR-AI HUB\n\nName: '+(name||'-')+'\nQuestion: '+q+'\n\nI have paid / will pay N500 to OPay 0803 635 6574. Please send receipt + answer. Jazakum Allahu Khairan.';
+  window.open('https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent(text),'_blank');
+  msg.textContent='Opening WhatsApp... Please pay N500 to OPay 0803 635 6574 and send your receipt there.';
+  msg.style.color='#2ecc71';
+}
+(async function(){try{await callAI('Say OK only.');setStatus('online');}catch(e){setStatus('offline');}})();
+</script>
+</body>
+  </html>
