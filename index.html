@@ -55,6 +55,10 @@ footer{background:#000;padding:24px 16px;text-align:center;font-size:13px;color:
 .floatWrap{position:fixed;bottom:14px;right:14px;z-index:99;display:flex;flex-direction:column;gap:8px;align-items:flex-end}
 .floatBtn{display:block;text-decoration:none;font-weight:900;padding:13px 16px;border-radius:50px;font-size:14px;box-shadow:0 4px 14px rgba(0,0,0,.45);text-align:center}
 @media(max-width:600px){.grid{grid-template-columns:1fr}.hero h1{font-size:26px}.tabs{flex-direction:column}}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;padding:12px;max-width:100%;box-sizing:border-box}
+.gallery img{width:100%;height:auto;border-radius:12px;display:block}
+@media(min-width:700px){.gallery{grid-template-columns:repeat(3,1fr)}}
+img{max-width:100%}
 </style>
   <link rel="icon" type="image/jpeg" href="Mimbarailogo.jpeg">
 </head>
@@ -63,21 +67,8 @@ footer{background:#000;padding:24px 16px;text-align:center;font-size:13px;color:
 <header><div class="logo"><img src="Mimbarailogo.jpeg" style="width:42px;height:42px;border-radius:50%;object-fit:cover;border:2px solid #c9a227;background:#fff;vertical-align:middle">  MINBAR<span>-AI</span> HUB</div><button class="menuBtn" onclick="document.getElementById('nav').classList.toggle('open')">☰ MENU</button></header>
 <nav id="nav">
 <a href="#home" onclick="closeMenu()">🏠 Home</a><a href="#try" onclick="closeMenu()">🤖 Try Mimbar AI</a><a href="#library" onclick="closeMenu()">📚 Sermon Library / Library</a><a href="#learn" onclick="closeMenu()">📖 Learn Islam</a><a href="#imams" onclick="closeMenu()">👳 For Imams + Imam Certification</a><a href="#book" onclick="closeMenu()">📅 Book an Imam</a><a href="#askimam" onclick="closeMenu()">❓ Ask Imam - N500</a><a href="#almajiri" onclick="closeMenu()">👦 For Almajiris</a><a href="#citizens" onclick="closeMenu()">👨‍👩‍👧 For Citizens</a><a href="#schools" onclick="closeMenu()">🏫 For Schools &amp; NGOs</a><a href="#children" onclick="closeMenu()">🧒 Children Corner</a><a href="#women" onclick="closeMenu()">🧕 For Women</a><a href="#about" onclick="closeMenu()">ℹ️ About / TETFund Concept</a><a href="#contact" onclick="closeMenu()">📞 Contact</a>
+<a href="#gallery" onclick="closeMenu()">🖼️ View Gallery</a>
 </nav>
-<!-- GALLERY -->
-<div class="gallery">
-  <img src="Mimbarai1.jpeg">
-  <img src="Mimbarai2.jpeg">
-  <img src="Mimbarai3.jpeg">
-  <img src="Mimbarai4.jpeg">
-  <img src="Mimbarai5.jpeg">
-  <img src="Mimbarai6.jpeg">
-  <img src="Mimbarai7.jpeg">
-  <img src="Mimbarai8.jpeg">
-  <img src="Mimbarai9.jpeg">
-  <img src="Mimbarai10.jpeg">
-  <img src="Mimbarai11.jpeg">
-</div>
 <div class="hero" id="home">
 <div class="pill">FROM RESEARCH TO MARKET • PEACEFUL SERMONS UNITED</div>
 <h1>MINBAR-AI HUB: <span>Sect-Sensitive, AI-Powered</span> Digital Infrastructure for Islamic Sermons</h1>
@@ -303,5 +294,21 @@ setInterval(()=>{
   });
 }, 800);
 </script>
+<section id="gallery" style="padding:20px 10px">
+  <h2 style="text-align:center">📸 Gallery</h2>
+  <div class="gallery">
+    <img src="Mimbarai1.jpg">
+    <img src="Mimbarai2.jpg">
+    <img src="Mimbarai3.jpg">
+    <img src="Mimbarai4.jpg">
+    <img src="Mimbarai5.jpg">
+    <img src="Mimbarai6.jpeg">
+    <img src="Mimbarai7.jpeg">
+    <img src="Mimbarai8.jpeg">
+    <img src="Mimbarai9.jpeg">
+    <img src="Mimbarai10.jpg">
+    <img src="Mimbarai11.jpeg">
+  </div>
+</section>
 </body>
   </html>
